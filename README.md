@@ -5,6 +5,7 @@ An application that lets you see and add cats.
 - `name`: the cat's name
 - `age`: the cat's age
 - `owner`: the cat's owner
+- `image`: a random image of a cat
 The program will randomly choose the image for you.
 
 
