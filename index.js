@@ -3,16 +3,22 @@ const express = require('express');
 var mongoose = require('mongoose');
 
 
+
 //mongoose connection
 mongoose.connect('mongodb://kcram:chickensarerockstars21@ds157654.mlab.com:57654/web4200', {useNewUrlParser: true});
 
-//mongoose models
-const Cat = mongoose.model('Cat', { 
-    name: String, 
-    age: Number, 
-    owner: String,
+var catSchema = new mongoose.Schema({
+    name:  String,
+    age: Number,
+    owner:   String,
     image: String
 });
+
+
+//mongoose models
+const Cat = mongoose.model('Cat', catSchema);
+
+
 
 //app and middleware setup
 let app = express(); //calls express like a function and returns an express object that you can use to configure(app)
