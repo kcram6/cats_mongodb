@@ -1,0 +1,7 @@
+mongo ds157654.mlab.com:57654/web4200 -u kcram -p chickensarerockstars21
+show collections
+db.cats.insert({ name:'mittens', age:4, owner:'kath'})
+db.cats.find()
+
+
+mongodb://kcram:chickensarerockstars21@ds157654.mlab.com:57654/web4200

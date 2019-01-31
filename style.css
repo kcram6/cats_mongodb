@@ -1,0 +1,180 @@
+[v-cloak] {
+    display:none;
+}
+
+/*
+
+font-family: 'Major Mono Display', monospace;
+font-family: 'Baloo Thambi', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Francois One', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Sigmar One', cursive;
+font-family: 'Baloo', cursive;
+font-family: 'Titan One', cursive;
+
+
+*/
+
+body {
+    font-family: sans-serif;
+    background-image: url('house.png');
+    background-repeat: repeat-y;
+    background-size:cover;
+    background-attachment: scroll;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    font-weight:bold;
+
+    
+}
+
+
+.addButton {
+    position:fixed;
+    top:85%;
+    left:85%;
+    background-color:#000;
+    border-radius: 50%;
+    padding:15px 25px;
+    font-size:2em;
+    color:white;
+}
+
+/* li.odd {
+    background-color: #eee;
+} */
+
+h1 {
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.5em;
+    font-size:3em;
+    text-align:center;
+    
+}
+
+.heading {
+    /* background-color:#a7c5cc; */
+    padding:20px;
+}
+
+.countText {
+    text-align: center;    
+    display: inline-block;
+    font-family: 'Major Mono Display', monospace;
+
+    
+}
+
+.count {
+    margin:10px;
+    padding:10px;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    font-family: 'Major Mono Display', monospace;
+
+}
+
+
+.addButton:hover {
+    cursor: pointer;
+}
+
+.catContainer {
+    display:inline-block;
+}
+
+.catForm {
+    text-align:center;
+    margin-top:50px;
+    background-color:black;
+    color:white;
+    font-size:1em;
+    padding:30px;
+    
+}
+
+.catForm input[type=text] {
+    margin:15px;
+    background-color: transparent;
+    border: 0px solid white;
+    border-bottom: 2px solid white;
+    color:white;
+    font-size:1em;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    font-weight:bold;
+}
+
+.catForm input[type=text]:focus {
+    outline-color: transparent;
+    outline-style: none; 
+}
+
+.catForm input[type=number] {
+    margin:10px;
+    background-color: transparent;
+    border: 0px solid white;
+    border-bottom: 2px solid white;
+    color:white;
+    font-size:1em;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    font-weight:bold;
+}
+
+.catForm input[type=number]:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.catForm button {
+    background-color:#cc997c;
+    color:black;
+    border:none;
+    padding: 10px 15px;
+    border-radius:5px;
+    font-size:0.7em;
+    margin-left:300px;
+    margin-top:20px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.1em;
+
+    
+}
+
+.catForm button:hover {
+    cursor:pointer;
+}
+
+.catContainer {
+    background-color:rgba(167, 197, 204, 0.8);
+    margin:50px;
+}
+
+.wrapper {
+    width:90%;
+    margin: 0 auto;
+}
+
+.catImage {
+    width:250px;
+    height:250px;
+    
+}
+
+h4, h6 {
+    margin:5px;
+    padding:5px;
+    font-family: 'Fredoka One', cursive;
+    display:inline-block;
+    font-weight:normal;
+    font-size:1em;
+}
+
+h6 {
+    font-size:0.8em;
+}

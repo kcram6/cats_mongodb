@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cat World</title>
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Baloo|Baloo+Thambi|Francois+One|Fredoka+One|Luckiest+Guy|Major+Mono+Display|Righteous|Sigmar+One|Titan+One|Unica+One" rel="stylesheet">
+        <link rel='stylesheet' href="style.css">
+        <link rel="shortcut icon" href="https://i.imgur.com/oH4Z3fB.gif" type="image/x-icon"/>
+    </head>
+    <body>
+        
+        <div id='app' v-cloak>
+            <h1><span class='heading'>Cat World</span></h1>
+            <div style='text-align: center;'>
+                <span style='background-color:#cc997c; padding:20px;'><h3 class='countText'>number of cats: </h3><span class='count'>{{ cats.length }}</span></span>
+            </div>
+            <div>
+                <button id='addButton' class='addButton' v-on:click='newCat'>+</button>
+            </div>
+            <div v-if="showCatForm" class='catForm'>
+                Name: &nbsp; &nbsp; &nbsp;<input type='text' v-model='name'><br>
+                <!-- v-model only applies to user inputs, like form elements-->
+                Age: &nbsp; &nbsp; &nbsp; &nbsp;<input type='number' v-model='age'><br>
+                Owner: &nbsp; &nbsp; &nbsp;<input type="text" v-model='owner'><br>
+                <button v-on:click='addCat'>submit</button><br>
+            </div>
+           
+        
+
+
+            <div class='wrapper'>
+                <!-- do a v if cats, else have message on adding-->
+                <div id='catContainer' class='catContainer' v-for='(kitten, index) in cats.slice().reverse()'>
+                    <span class='catImage' id='catImage'>
+                        <img class='catImage' v-bind:src="kitten.image" alt="cat">
+                    </span><br>                    
+                    <h4>name:</h4>{{ kitten.name }}<br>
+                    <h6>age:</h6>{{ kitten.age }}<br>
+                    <h6>owner:</h6>{{ kitten.owner }}<br>
+                </div>            
+
+
+            </div>
+
+
+        </div>
+
+        <script src='vue.js'></script>
+        <script src='app.js'></script>
+    </body>
+</html>
