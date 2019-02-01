@@ -26,8 +26,8 @@ The program will randomly choose the image for you.
 
 
 #### Image Links
-*https://i.imgur.com/U6f9ZEy.gif <br />
-*https://i.imgur.com/oH4Z3fB.gif <br />
-*https://i.imgur.com/Stu2eNJ.gif <br />
-*https://i.imgur.com/w9A2PP7.gif <br />
+*https://i.imgur.com/U6f9ZEy.gif <br/>
+*https://i.imgur.com/oH4Z3fB.gif <br/>
+*https://i.imgur.com/Stu2eNJ.gif <br/>
+*https://i.imgur.com/w9A2PP7.gif <br/>
 *https://i.imgur.com/m7JgTqp.gif
