@@ -9,6 +9,13 @@ An application that lets you see and add cats.
 The program will randomly choose the image for you.
 
 
+### Cat Schema
+- name: `string`
+- age: `number`
+- owner: `string`
+- image: `string` (url)
+
+
 ## Web App Endpoints
 ### GET
 - `/cats`: returns a JSON representation of the whole collection of cats.
